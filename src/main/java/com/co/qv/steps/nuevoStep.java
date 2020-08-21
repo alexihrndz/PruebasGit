@@ -6,7 +6,12 @@ public class nuevoStep {
     //nuevosCambios2
 
     @Step
-    public void nuevoMetodo(){
+    public void nuevoMetodo() {
         System.out.println("Nuevo método");
+
+    }
+    @Step
+    public void otherMethod(){
+        System.out.println(getClass().toString());
     }
 }
