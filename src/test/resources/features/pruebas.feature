@@ -10,4 +10,5 @@ Feature: Pruebas GIT
     When trabajemos en el mismo proyecto
     Then podemos integrar los cambios
 
-    #nuevo comentario para comit
+    #nuevo comentario para commit
+    #se actualiza el .gitignore
