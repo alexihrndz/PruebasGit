@@ -7,7 +7,7 @@ import java.time.Instant;
 public class NuevoStep {
 
     @Step
-    public void nuevoMetodo() {
+    public static void nuevoMetodo() {
         Instant hora = Instant.now();
         System.out.println(hora);
     }
