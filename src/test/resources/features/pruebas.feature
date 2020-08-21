@@ -5,6 +5,12 @@ Feature: Pruebas GIT
     When trabajemos en el mismo proyecto
     Then podemos integrar los cambios
 
+
+  Scenario: se agrega un cambio para la rama nuevosCambios1
+    Given que somos un equipo
+    When trabajemos en el mismo proyecto
+    Then podemos integrar los cambios
+
   Scenario: Otros cambios para otra rama nuevosCambios2
     Given que somos un equipo
     When trabajemos en el mismo proyecto
