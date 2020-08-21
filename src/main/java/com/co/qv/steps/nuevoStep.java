@@ -14,4 +14,9 @@ public class nuevoStep {
     public void otherMethod(){
         System.out.println(getClass().toString());
     }
+
+    @Step
+    public void otraPrueba(){
+        System.out.println("Otra prueba");
+    }
 }
