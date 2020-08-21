@@ -2,13 +2,14 @@ package com.co.qv.steps;
 
 import net.thucydides.core.annotations.Step;
 
-import java.sql.SQLException;
+import java.time.Instant;
 
-public class nuevoStep {
+public class NuevoStep {
 
     @Step
     public void nuevoMetodo() {
-
+        Instant hora = Instant.now();
+        System.out.println(hora);
     }
     @Step
     public void otherMethod(){
