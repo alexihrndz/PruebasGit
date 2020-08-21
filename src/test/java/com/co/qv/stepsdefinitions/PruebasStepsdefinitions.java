@@ -10,7 +10,7 @@ import net.thucydides.core.annotations.Steps;
 public class PruebasStepsdefinitions {
 
     PruebasPage pruebasPage;
-
+    //comentario
     @Steps
     PruebasSteps pruebasSteps;
 
