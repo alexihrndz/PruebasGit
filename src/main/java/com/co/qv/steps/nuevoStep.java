@@ -7,7 +7,7 @@ public class nuevoStep {
 
     @Step
     public void nuevoMetodo() {
-        System.out.println("Otro cambio para testear el merge");
+        System.out.println("Pruebas pull y merge");
 
     }
     @Step
