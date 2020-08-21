@@ -3,13 +3,10 @@ package com.co.qv.steps;
 import net.thucydides.core.annotations.Step;
 
 public class nuevoStep {
-    //nuevosCambios2
 
     @Step
     public void nuevoMetodo() {
         System.out.println("Pruebas pull y merge");
-        System.out.println("Otro cambio para testear el merge");
-        System.out.println("Otro cambio para testear el merge");
         System.out.println("Nueva linea");
 
     }
@@ -20,6 +17,10 @@ public class nuevoStep {
 
     @Step
     public void otraPrueba(){
+        System.out.println("Cambio en otro método");
+    }
+
+    public void unMetodo(){
         System.out.println("Cambio en otro método");
     }
 }
