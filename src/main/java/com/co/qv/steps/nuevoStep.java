@@ -20,6 +20,6 @@ public class nuevoStep {
 
     @Step
     public void otraPrueba(){
-        System.out.println("Otra prueba");
+        System.out.println("Cambio en otro método");
     }
 }
