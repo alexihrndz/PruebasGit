@@ -19,3 +19,5 @@ Feature: Pruebas GIT
     #nuevo comentario para commit
     #se actualiza el .gitignore
     #comentario en master
+    #nuevo cambio para probar merge
+  #otro comentario
