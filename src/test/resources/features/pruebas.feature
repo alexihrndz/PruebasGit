@@ -21,3 +21,5 @@ Feature: Pruebas GIT
     #comentario en master
     #nuevo cambio para probar merge
   #otro comentario
+  
+  #comentario en master antes de hacer merge
