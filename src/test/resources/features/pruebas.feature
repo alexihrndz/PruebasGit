@@ -9,3 +9,5 @@ Feature: Pruebas GIT
     Given que somos un equipo
     When trabajemos en el mismo proyecto
     Then podemos integrar los cambios
+
+    #nuevo comentario para comit
