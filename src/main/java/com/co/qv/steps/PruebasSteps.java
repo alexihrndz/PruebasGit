@@ -6,11 +6,13 @@ import net.thucydides.core.annotations.Step;
 public class PruebasSteps {
 
     PruebasPage pruebasPage;
+    NuevoStep nuevoStep;
 
     @Step
     public void buscarTexto(){
         pruebasPage.ingresarTexto("JAVA");
         pruebasPage.buscarTexto();
+        nuevoStep.nuevoMetodo();
     }
 
     @Step
