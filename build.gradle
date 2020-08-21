@@ -1,0 +1,55 @@
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.70")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+dependencies {
+    testCompile 'net.serenity-bdd:serenity-core:2.0.70'
+    testCompile 'net.serenity-bdd:serenity-junit:2.0.70'
+    testCompile('junit:junit:4.12')
+    testCompile('org.assertj:assertj-core:3.11.1')
+    testCompile('org.slf4j:slf4j-simple:1.7.25')
+    testCompile ('org.apache.poi:poi:4.0.1')
+    testCompile ('commons-collections:commons-collections:3.2.2')
+    testCompile ('org.apache.xmlbeans:xmlbeans:3.0.2')
+    testCompile ('org.apache.poi:poi-ooxml:4.0.1')
+    testCompile ('org.apache.poi:poi-ooxml-schemas:4.0.1')
+
+    compile 'net.serenity-bdd:serenity-core:2.0.70'
+    compile 'net.serenity-bdd:serenity-junit:2.0.70'
+    compile 'net.serenity-bdd:serenity-cucumber:1.9.45'
+    compile 'net.serenity-bdd.maven.plugins:serenity-maven-plugin:1.2.5-rc.6'
+    compile 'org.apache.maven.plugins:maven-surefire-plugin:2.22.1'
+    compile 'org.apache.poi:poi:4.0.1'
+    compile 'commons-collections:commons-collections:3.2.2'
+    compile 'org.apache.xmlbeans:xmlbeans:3.0.2'
+    compile 'org.apache.poi:poi-ooxml:4.0.1'
+    compile 'org.apache.poi:poi-ooxml-schemas:4.0.1'
+
+}
+
+tasks.withType(Test) {
+    systemProperty 'webdriver.driver', System.getProperty('webdriver.driver', 'chrome')
+    systemProperty 'tags', System.getProperty('tags', '')
+    enableAssertions = true
+    systemProperty 'environment', System.getProperty('environment', '')
+
+}
+
+gradle.startParameter.continueOnFailure = true
+test.finalizedBy(aggregate)
