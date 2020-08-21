@@ -10,6 +10,7 @@ public class nuevoStep {
         System.out.println("Pruebas pull y merge");
         System.out.println("Otro cambio para testear el merge");
         System.out.println("Otro cambio para testear el merge");
+        System.out.println("Nueva linea");
 
     }
     @Step
