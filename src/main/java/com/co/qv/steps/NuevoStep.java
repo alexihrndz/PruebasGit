@@ -8,7 +8,7 @@ public class NuevoStep {
     @Step
     public static void nuevoMetodo() {
         Instant hora = Instant.now();
-        System.out.println(hora.toString().substring(1, 20));
+        System.out.println(hora.toString().substring(1, 10));
     }
 
     @Step
