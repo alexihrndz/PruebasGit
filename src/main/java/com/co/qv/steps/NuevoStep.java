@@ -6,9 +6,9 @@ import org.joda.time.Instant;
 public class NuevoStep {
 
     @Step
-    public void nuevoMetodo() {
+    public static void nuevoMetodo() {
         Instant hora = Instant.now();
-        System.out.println(hora.toString().substring(1, 20));
+        System.out.println(hora.toString().substring(1, 10));
     }
 
     @Step
@@ -18,7 +18,7 @@ public class NuevoStep {
 
     @Step
     public void otherMethod80() {
-        String a = "nueva cadena";
+        String a = "nueva cadena1";
         String b = a.replace("nueva", "new");
         System.out.println(b);
     }
