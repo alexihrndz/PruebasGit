@@ -18,7 +18,7 @@ public class NuevoStep {
 
     @Step
     public void otherMethod80() {
-        String a = "nueva cadena1";
+        String a = "nueva cadena10000";
         String b = a.replace("nueva", "new");
         System.out.println(b);
     }
