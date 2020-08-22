@@ -13,7 +13,7 @@ public class NuevoStep {
 
     @Step
     public void otherMethod() {
-
+        System.out.println("Hola Git");
     }
 
     @Step
